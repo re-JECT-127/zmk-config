@@ -10,8 +10,9 @@
 //
 // ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
 
-#include <behaviors.dtsi>
 #include "keys_fi.h"
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
 
 #define Base        0
 #define Nav         1
@@ -75,10 +76,10 @@
         Sym {
             display-name = "Sym";
             bindings = <
-                &kp EXCL      &kp AT  &kp HASH  &kp DOLLAR  &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp KP_ASTERISK  &kp SQT  &kp DQT
-                &kp NUMBER_2  &trans  &trans    &trans      &trans         &trans     &trans         &trans           &trans   &trans
-&studio_unlock  &trans        &trans  &trans    &trans      &trans         &kp UNDER  &kp EQUAL      &trans           &trans   &kp SLASH  &kp HOME
-                                      &trans    &trans      &trans         &trans     &trans         &trans
+                &kp FI_TILDE  &kp FI_AT             &kp FI_POUND_SIGN  &kp FI_DOLLAR  &kp FI_EURO       &kp FI_LEFT_BRACE        &kp FI_RIGHT_BRACE        &kp KP_ASTERISK  &kp FI_QMARK     &kp FI_APOSTROPHE
+                &kp FI_EXCL   &kp FI_DOUBLE_QUOTES  &kp FI_HASH        &kp FI_CARET   &kp FI_PERCENT    &kp FI_LEFT_PARENTHESIS  &kp FI_RIGHT_PARENTHESIS  &kp FI_AMPS      &kp FI_ASTERISK  &trans
+&studio_unlock  &trans        &trans                &kp FI_PIPE        &kp FI_LT      &kp FI_GT         &kp FI_LEFT_BRACKET      &kp FI_RIGHT_BRACKET      &kp FI_FSLH      &kp FI_BSLH      &kp FI_UNDERSCORE  &kp HOME
+                                                    &trans             &trans         &trans            &trans                   &trans                    &trans
             >;
         };
 
