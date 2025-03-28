@@ -86,10 +86,10 @@
         Fun {
             display-name = "Fun";
             bindings = <
-        &bootloader  &trans  &trans  &trans  &to 4     &trans  &trans  &trans  &kp END  &kp F1
-        &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F10
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
-                             &trans  &trans  &trans    &trans  &trans  &trans
+        &bootloader  &trans  &trans  &trans  &to 4     &kp END  &kp F7  &kp F8  &kp F9  &kp F10
+        &trans       &trans  &trans  &trans  &trans    &trans   &kp F4  &kp F5  &kp F6  &kp F11
+&trans  &trans       &trans  &trans  &trans  &trans    &trans   &kp F1  &kp F2  &kp F3  &kp F12  &kp HOME
+                             &trans  &trans  &trans    &trans   &trans  &trans
             >;
         };
 
