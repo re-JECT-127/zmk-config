@@ -13,6 +13,7 @@
 #include "keys_fi.h"
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <behaviors/rgbled_widget.dtsi>
 
 #define Base        0
 #define Nav         1
