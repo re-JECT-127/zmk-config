@@ -25,7 +25,7 @@
 &mt {
     quick-tap-ms = <100>;
     global-quick-tap;
-    flavor = "hold-preferred";
+    flavor = "tap-preferred";
     tapping-term-ms = <170>;
 };
 
@@ -41,7 +41,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "HOMEROW_MODS";
             #binding-cells = <2>;
-            flavor = "hold-preferred";
+            flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <125>;
             global-quick-tap;
